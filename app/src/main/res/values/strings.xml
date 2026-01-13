@@ -1,0 +1,155 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Ecco 360 Captura</string>
+
+
+    <!-- Login -->
+    <string name="login">Iniciar sesión</string>
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="go_to_register">¿No tienes cuenta? Regístrate</string>
+
+    <!-- Register -->
+    <string name="register">Registrarse</string>
+    <string name="fullname">Nombre completo</string>
+    <string name="email">Correo electrónico</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="back_to_login">Volver al inicio</string>
+
+    <!-- Main -->
+    <string name="welcome">Bienvenido a la pantalla principal</string>
+    <string name="go_to_tramite">Ir a Trámite</string>
+    <string name="go_to_reportes">Ir a Reportes</string>
+    <string name="logout">Cerrar sesión</string>
+
+
+    <!-- Clave de API de Google Maps -->
+    <string name="google_maps_key">AIzaSyCt1cSKeNYhG5OrBaHxeE_BQeHgJAX1z7A</string>
+
+
+    <!-- Reportes -->
+    <string name="reporte_titulo">Reporte de Trámites</string>
+    <string name="reporte_contenido">Aquí aparecerán los reportes generados por el usuario.</string>
+    <string name="volver_inicio">Volver al inicio</string>
+
+    <!-- Trámite -->
+    <string name="tramite_titulo">Formulario de Trámite</string>
+    <string name="enviar_tramite">Enviar trámite</string>
+    <string name="descripcion_tramite">Describe tu solicitud</string>
+    <string name="phone_hint">Teléfono de contacto</string>
+    <string name="fraccionamiento_hint">Fraccionamiento</string>
+    <string name="calle_hint">Calle</string>
+    <string name="tipo_reporte_hint">Tipo de reporte</string>
+    <string name="foto_titulo">Agregar / tomar foto</string>
+    <string name="titulo_dialogo_imagen">Agregar imagen</string>
+    <string name="opcion_foto">Tomar foto</string>
+    <string name="opcion_galeria">Seleccionar de galería</string>
+
+    <!-- Validaciones -->
+    <string name="campo_obligatorio">Campo obligatorio</string>
+    <string name="reporte_enviado">Reporte enviado ✅</string>
+    <string name="permiso_necesario">Permisos necesarios para continuar</string>
+
+
+
+    <!-- /// -->
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="cerrar_sesi_n">Cerrar Sesión</string>
+
+
+    <!-- /// -->
+
+
+    <!-- /// -->
+
+
+    <string name="reporte_alumbrado">Alumbrado</string>
+    <string name="reporte_calles">Calles</string>
+    <string name="reporte_miaa">Miaa</string>
+    <string name="reporte_apoyos">Apoyos</string>
+    <string name="reporte_parques_jardines">Parques Y Jardines</string>
+    <string name="reporte_limpia">Limpia</string>
+    <string name="reporte_vigilancia">Vigilancia</string>
+    <string name="reporte_convivencia">Convicencia</string>
+    <string name="reporte_ciudad">Ciudad</string>
+    <string name="reporte_otros">Otros</string>
+
+    <string name="reporte_estatus_default">Pendiente</string>
+    <string name="reporte_total">0</string>
+
+    <!-- Alumbrado -->
+    <string name="subcategoria_luminarias">Luminarias</string>
+    <string name="subcategoria_mejoras">Mejoras</string>
+    <string name="subcategoria_espacios_comunes">Espacios Comunes</string>
+    <string name="subcategoria_apagon">Apagón</string>
+
+    <!-- Calles -->
+    <string name="subcategoria_baches">Baches</string>
+    <string name="subcategoria_banquetas">Banquetas</string>
+    <string name="subcategoria_topes">Topes</string>
+    <string name="subcategoria_limpieza">Limpieza</string>
+    <string name="subcategoria_escombro">Escombro</string>
+
+    <!-- MIAA -->
+    <string name="subcategoria_drenaje">Drenaje</string>
+    <string name="subcategoria_fugas_de_agua">Fugas de Agua</string>
+    <string name="subcategoria_falta_de_agua">Falta de Agua</string>
+
+    <!-- Apoyos -->
+    <string name="subcategoria_ortopedicos">Ortopédicos</string>
+    <string name="subcategoria_paniales">Pañales</string>
+    <string name="subcategoria_alimentos">Alimentos</string>
+
+    <!-- Parques y Jardines -->
+    <string name="subcategoria_poda">Poda</string>
+    <string name="subcategoria_desmalezado">Desmalezado</string>
+    <string name="subcategoria_arbol_de_tu_casa">Árbol de tu Casa</string>
+    <string name="subcategoria_areas_verdes">Áreas Verdes</string>
+    <string name="subcategoria_camellones">Camellones</string>
+    <string name="subcategoria_otros_parques">Otros</string>
+
+    <!-- Limpia -->
+    <string name="subcategoria_basura">Basura</string>
+    <string name="subcategoria_contenedores">Contenedores</string>
+    <string name="subcategoria_contenedores_areas">Contenedores de Áreas</string>
+
+    <!-- Vigilancia -->
+    <string name="subcategoria_vehiculos_abandonados">Vehículos Abandonados</string>
+    <string name="subcategoria_vigilancia">Vigilancia</string>
+    <string name="subcategoria_apoyo_vial">Apoyo Vial</string>
+    <string name="subcategoria_mejoras_viales">Mejoras Viales</string>
+
+    <!-- Convivencia -->
+    <string name="subcategoria_ruido">Ruido</string>
+    <string name="subcategoria_mercados">Mercados</string>
+    <string name="subcategoria_permisos">Permisos</string>
+
+    <!-- Ciudad -->
+    <string name="subcategoria_fraccionamiento">Fraccionamiento</string>
+    <string name="subcategoria_problemas_vecinales">Problemas Vecinales</string>
+    <string name="subcategoria_uso_de_suelo">Uso de Suelo</string>
+    <string name="subcategoria_obra">Obra</string>
+    <string name="subcategoria_aclaracion">Aclaración</string>
+    <string name="subcategoria_escombro_via_publica">Escombro vía Pública</string>
+    <string name="subcategoria_otros_ciudad">Otros</string>
+
+    <!-- Otros -->
+    <string name="subcategoria_otros">Otros</string>
+    <string name="incidentes_reportados">TRAMITE</string>
+    <string name="fullscreen_map">fullscreen map</string>
+    <string name="eventinfowindow">EventInfoWindow</string>
+    <string name="expandir_incidencia">Expandir Incidencia</string>
+    <string name="full_screen_tabla">full screen tabla</string>
+</resources>

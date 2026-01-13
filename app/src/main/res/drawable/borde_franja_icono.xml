@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+  <!-- 🔹 Fondo semitransparente (puedes cambiar el color si deseas) -->
+  <solid android:color="@android:color/transparent" />
+
+  <!-- 🔹 Borde exterior -->
+  <stroke
+      android:width="2dp"
+      android:color="#808080" />  <!-- gris medio, puedes usar @color/grisOscuro -->
+
+  <!-- 🔹 Esquinas redondeadas -->
+  <corners android:radius="8dp" />
+</shape>

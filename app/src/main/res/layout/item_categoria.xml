@@ -1,0 +1,54 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemCard"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="2dp"
+    app:cardElevation="4dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/black"
+    app:shapeAppearanceOverlay="@style/Shape.Carrusel">
+
+    <LinearLayout
+        android:id="@+id/layoutCarrusel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- Parte superior -->
+        <LinearLayout
+            android:id="@+id/layoutSuperior"
+            android:layout_width="150dp"
+            android:layout_height="62dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imgIcono"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/encalumbrado"
+                android:contentDescription="Ícono" />
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reporte_otros"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

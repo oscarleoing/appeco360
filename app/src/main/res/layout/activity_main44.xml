@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <!-- Carrusel de Categorías -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCarrusel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:overScrollMode="never"
+        android:padding="4dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Layout de Subcategorías -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutSubCarrusel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_alumbrado_inferior"
+        android:padding="4dp"
+        app:layout_constraintTop_toBottomOf="@id/recyclerCarrusel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/contenedorDatos"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <!-- Título Subcategorías -->
+            <TextView
+                android:id="@+id/tvTituloSubCategorias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/incidentes_reportados"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="12sp"/>
+
+            <!-- RecyclerView de Subcategorías -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerSubCarrusel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

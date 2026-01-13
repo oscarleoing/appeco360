@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores básicos -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#E53935</color>
+
+
+
+    <!-- Colores del tema Material 3 -->
+    <color name="md_theme_primary">#29284A</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+
+    <color name="md_theme_secondary">#625B71</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+
+    <color name="md_theme_background">#FFFBFE</color>
+    <color name="md_theme_onBackground">#1C1B1F</color>
+
+    <color name="md_theme_surface">#FFFFFF</color>
+    <color name="md_theme_onSurface">#1C1B1F</color>
+
+    <!-- Accentos opcionales -->
+    <color name="md_theme_error">#B3261E</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+
+    <color name="purple_500">#29284A</color>
+
+    <color name="gray">#BDBDBD</color>
+    <color name="teal_700">#018786</color> <!-- o el color que quieras para resaltar -->
+
+    <color name="gray_hint">#B0B0B0</color>
+
+    <color name="coloranonimopre">#949494</color>
+    <color name="coloranonimoapa">#29284A</color>
+
+    <color name="bg_municipal">#EDEEF2</color>
+    <color name="view_card_subcarrucel">#CCCCCC</color>
+    <color name="color_alumbrado_superior">#FFD565</color>
+    <color name="color_alumbrado_inferior">#FFB901</color>
+
+    <color name="color_calles_superior">#92A4B1</color>
+    <color name="color_calles_inferior">#697F8D</color>
+
+    <color name="color_miaa_superior">#50C6F1</color>
+    <color name="color_miaa_inferior">#4696ED</color>
+
+    <color name="color_apoyos_superior">#FF8EB0</color>
+    <color name="color_apoyos_inferior">#FB5E93</color>
+
+    <color name="color_parques_y_jardines_superior">#70E002</color>
+    <color name="color_parques_y_jardines_inferior">#017F02</color>
+
+    <color name="color_limpia_superior">#AB8DFD</color>
+    <color name="color_limpia_inferior">#6047A3</color>
+
+    <color name="color_vigilancia_superior">#C22C49</color>
+    <color name="color_vigilancia_inferior">#A4223A</color>
+
+    <color name="color_convivencia_superior">#8DB3B6</color>
+    <color name="color_convivencia_inferior">#466F73</color>
+
+    <color name="color_ciudad_superior">#FFA688</color>
+    <color name="color_ciudad_inferior">#FC8B87</color>
+
+    <color name="color_otros_superior">#EC7D11</color>
+    <color name="color_otros_inferior">#FE6B37</color>
+
+    <color name="color_semaforo_verder">#388E3C</color>
+    <color name="color_semaforo_amarillo">#FFEB3B</color>
+    <color name="color_semaforo_rojo">#D32F2F</color>
+
+
+    <color name="color_alumbrado_info_window_90">#E5FFB901</color>
+    <color name="color_calles_info_window_90">#E5697F8D</color>
+    <color name="color_miaa_info_window_90">#E54696ED</color>
+    <color name="color_apoyos_info_window_90">#E5FB5E93</color>
+    <color name="color_parques_y_jardines_info_window_90">#E5017F02</color>
+    <color name="color_limpia_info_window_90">#E56047A3</color>
+    <color name="color_vigilancia_info_window_90">#E5A4223A</color>
+    <color name="color_convivencia_info_window_90">#E5466F73</color>
+    <color name="color_ciudad_info_window_90">#E5FC8B87</color>
+    <color name="color_otros_info_window_90">#E5FE6B37</color>
+    <color name="gris_deshabilitado">#C2C2C2</color>
+
+    <color name="purple_200">#EDEDF7</color>
+
+
+    <color name="purple_700">#29284A</color>
+    <color name="teal_200">#E8A027</color>
+
+    <color name="orange_500">#FF8600</color>
+
+    <color name="input_enabled">#263238</color>
+    <color name="input_disabled">#9E9E9E</color> <!-- Gris Material -->
+    <color name="hint_disabled">#BDBDBD</color>
+
+
+</resources>

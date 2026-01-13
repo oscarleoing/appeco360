@@ -1,0 +1,55 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemCard"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="1dp"
+    app:cardElevation="4dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/black"
+    app:shapeAppearanceOverlay="@style/Shape.Carrusel">
+    <LinearLayout
+        android:id="@+id/layoutCarrusel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <!-- Parte superior -->
+        <LinearLayout
+            android:id="@+id/layoutSuperior"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            android:padding="1dp">
+
+            <ImageView
+                android:id="@+id/imgSubIcono"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/encalumbrado"
+                android:padding="1dp"
+                android:contentDescription="Ícono" />
+
+            <TextView
+                android:id="@+id/txtSubCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/reporte_otros"
+                android:textStyle="bold"
+                android:padding="1dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+

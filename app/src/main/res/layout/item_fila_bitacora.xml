@@ -1,0 +1,368 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardBitacora"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="6dp"
+    app:cardBackgroundColor="@color/white"
+    app:strokeWidth="1dp"
+    app:strokeColor="#DADADA"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:id="@+id/scroll23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="6dp">
+
+        <!-- ===================== Fila principal ===================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:id="@+id/txtNombreCompletoFila"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#1A1A1A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txtFolioGuia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#444444"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/icExpand"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_expand_button"
+                    android:src="@drawable/icon_expand_incidencia"
+                    android:contentDescription="@string/expandir_incidencia"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    app:tint="#2E2E2E" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ===================== Contenido colapsable ===================== -->
+        <LinearLayout
+            android:id="@+id/layoutDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:padding="12dp"
+            android:background="#F5F5F5">
+
+            <!-- ===================== NUEVOS ELEMENTOS AÑADIDOS ===================== -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCC" />
+
+
+            <!-- ===================== CATEGORÍA / SUBCATEGORÍA ===================== -->
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/layoutCategoriaSub2Bitacora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:flexWrap="wrap"
+                app:flexDirection="row"
+                app:justifyContent="flex_start"
+                app:alignItems="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+                <!-- GRUPO 1: Categoría + / -->
+                <LinearLayout
+                    android:id="@+id/grupoCategoria2Bitacora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:id="@+id/viewColorCategoriaBitacora"
+                        android:layout_width="10dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#CCCCCC" />
+
+                    <ImageView
+                        android:id="@+id/iconCategoriaVistaBitacora"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/tvCategoriaVistaBitacora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Categoría:"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- GRUPO 2: Subcategoría -->
+                <LinearLayout
+                    android:id="@+id/grupoSubcategoria2Bitacora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvSeparadorSub2Bitacora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" /  "
+                        android:visibility="visible"
+                        android:textSize="16sp"/>
+
+                    <ImageView
+                        android:id="@+id/iconSubcategoriaVistaBitacora"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp" />
+
+                    <TextView
+                        android:id="@+id/tvSubcategoriaVistaBitacora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subcategoría:"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:layout_marginEnd="8dp" />
+                </LinearLayout>
+
+            </com.google.android.flexbox.FlexboxLayout>
+
+
+            <!-- ===================== RESTO DE TUS CAMPOS ===================== -->
+
+            <TextView
+                android:id="@+id/txtEstatusFila"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estatus:"
+                android:textSize="13.5sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_estatus_redondo"/>
+
+
+            <LinearLayout
+                android:id="@+id/layoutFechaFila"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="4dp">
+
+                <!-- Ícono calendario -->
+                <ImageView
+                    android:id="@+id/iconFechaFila"
+                    style="@style/InfoIcon"
+                    android:src="@drawable/baseline_calendar_month"
+
+                    android:layout_marginEnd="6dp"/>
+
+                <!-- Texto de la fecha -->
+                <TextView
+                    android:id="@+id/txtFechaFila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#333"
+                    android:textSize="13.5sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="4dp">
+
+                <!-- Ícono hora -->
+                <ImageView
+                    style="@style/InfoIcon"
+                    android:src="@drawable/baseline_clock"
+                    android:layout_marginEnd="6dp" />
+
+                <!-- Texto -->
+                <TextView
+                    android:id="@+id/txtHoraFila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#333"
+                    android:textSize="13.5sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="4dp">
+
+                <!-- Ícono observación -->
+                <ImageView
+                    style="@style/InfoIcon"
+                    android:src="@drawable/ic_sticky_note"
+                    android:layout_marginEnd="6dp" />
+
+                <!-- Texto -->
+                <TextView
+                    android:id="@+id/txtObsFila"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#333"
+                    android:textSize="13.5sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="4dp">
+                <!-- Ícono respuesta -->
+                <ImageView style="@style/InfoIcon"
+                    android:src="@drawable/baseline_person"
+                    android:layout_marginEnd="6dp"/>
+                <!-- Texto -->
+                <TextView
+                    android:id="@+id/txtResFila"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Respuesta:"
+                    android:textColor="#333"
+                    android:textSize="13.5sp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtFolioFila"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Folio:"
+                android:textColor="#333"
+                android:textSize="13.5sp"
+                android:visibility="gone"
+                android:paddingTop="4dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="4dp">
+
+                <!-- Ícono dirección -->
+                <ImageView
+                    style="@style/InfoIcon"
+                    android:src="@drawable/baseline_location_on"
+                    android:layout_marginEnd="6dp"
+                    android:contentDescription="Dirección" />
+
+                <!-- Texto -->
+                <TextView
+                    android:id="@+id/txtDireccionCompleta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dirección:"
+                    android:textColor="#333"
+                    android:textSize="13.5sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtDesCalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calle:"
+                android:textColor="#333"
+                android:textSize="13.5sp"
+                android:visibility="gone"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtDesFrac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fraccionamiento:"
+                android:textColor="#333"
+                android:textSize="13.5sp"
+                android:visibility="gone"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtNumExt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número Exterior:"
+                android:textColor="#333"
+                android:textSize="13.5sp"
+                android:visibility="gone"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtNumInt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número Interior:"
+                android:textColor="#333"
+                android:textSize="13.5sp"
+                android:visibility="gone"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtIdConversacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID Conversación:"
+                android:textColor="#333"
+                android:textSize="13.5sp"
+                android:visibility="gone"
+                android:paddingTop="4dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
