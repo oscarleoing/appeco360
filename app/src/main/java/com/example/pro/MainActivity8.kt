@@ -3626,8 +3626,13 @@ class MainActivity8 : AppCompatActivity(), OnMapReadyCallback, OnCategoriaSelecc
                                 .snippet(
                                     if (!colonia.cpFra.isNullOrEmpty())
                                         "Código Postal ${colonia.cpFra}"
+                                    else if (colonia.delNombre == "NO ESPECIFICADA" && !colonia.cpFra.isNullOrEmpty())
+                                    {
+                                        "Código Postal ${colonia.cpFra}"
+                                    }
+
                                     else
-                                        "Colonia ${colonia.delNombre}"
+                                    "Colonia ${colonia.delNombre}"
                                 )
                                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED))
                         )
